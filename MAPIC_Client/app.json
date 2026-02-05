@@ -1,0 +1,33 @@
+{
+  "name": "MAPIC Client",
+  "slug": "mapic-client",
+  "version": "1.0.0",
+  "orientation": "portrait",
+  "userInterfaceStyle": "light",
+  "assetBundlePatterns": [
+    "**/*"
+  ],
+  "ios": {
+    "supportsTablet": true,
+    "bundleIdentifier": "com.mapic.client"
+  },
+  "android": {
+    "package": "com.anonymous.mapic_client",
+    "permissions": [
+      "ACCESS_COARSE_LOCATION",
+      "ACCESS_FINE_LOCATION",
+      "ACCESS_BACKGROUND_LOCATION"
+    ]
+  },
+  "plugins": [
+    "expo-router",
+    [
+      "expo-location",
+      {
+        "locationAlwaysAndWhenInUsePermission": "Allow MAPIC to use your location to show you on the map and share with friends.",
+        "locationAlwaysPermission": "Allow MAPIC to use your location in the background to keep your friends updated.",
+        "locationWhenInUsePermission": "Allow MAPIC to use your location to show you on the map."
+      }
+    ]
+  ]
+}
