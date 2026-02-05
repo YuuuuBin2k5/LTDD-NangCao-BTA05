@@ -1,0 +1,4 @@
+// Export all types
+export * from './auth.types';
+export * from './avatar.types';
+export * from './friend.types';
