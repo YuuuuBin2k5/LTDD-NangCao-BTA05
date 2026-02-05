@@ -76,20 +76,20 @@ class ApiService {
 
   // Discovery APIs
   async getCategories(): Promise<any> {
-    const response = await this.get<any>('/places/categories');
+    const response = await this.get<any>('/api/v1/places/categories');
     return response.data || [];
   }
 
   async getPopularPlaces(lat: number, lng: number, limit = 10): Promise<any> {
     const response = await this.get<any>(
-      `/places/popular?lat=${lat}&lng=${lng}&limit=${limit}`
+      `/api/v1/places/popular?lat=${lat}&lng=${lng}&limit=${limit}`
     );
     return response.data || [];
   }
 
   async getNearbyFriends(lat: number, lng: number, token: string, limit = 20): Promise<any> {
     const response = await this.get<any>(
-      `/friends/nearby?lat=${lat}&lng=${lng}&limit=${limit}`,
+      `/api/v1/friends/nearby?lat=${lat}&lng=${lng}&limit=${limit}`,
       token
     );
     return Array.isArray(response) ? response : [];
@@ -97,7 +97,7 @@ class ApiService {
 
   async checkInToPlace(placeId: number, lat: number, lng: number, token: string): Promise<any> {
     return this.post<any>(
-      `/places/${placeId}/checkin`,
+      `/api/v1/places/${placeId}/checkin`,
       { latitude: lat, longitude: lng },
       token
     );

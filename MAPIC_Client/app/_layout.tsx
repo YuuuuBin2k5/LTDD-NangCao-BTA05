@@ -3,6 +3,8 @@
  * Sets up providers, navigation, and global configurations
  */
 
+import 'react-native-reanimated';
+import 'react-native-gesture-handler';
 import { useEffect, useState } from 'react';
 import { Stack } from 'expo-router';
 import { View, ActivityIndicator, Text, StyleSheet } from 'react-native';

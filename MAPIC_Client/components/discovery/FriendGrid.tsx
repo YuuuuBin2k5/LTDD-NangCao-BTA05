@@ -46,6 +46,7 @@ export default function FriendGrid({
         columnWrapperStyle={styles.row}
         contentContainerStyle={styles.listContent}
         showsVerticalScrollIndicator={false}
+        scrollEnabled={false}
       />
     );
   }
@@ -72,6 +73,7 @@ export default function FriendGrid({
       columnWrapperStyle={styles.row}
       contentContainerStyle={styles.listContent}
       showsVerticalScrollIndicator={false}
+      scrollEnabled={false}
       refreshControl={
         onRefresh ? (
           <RefreshControl

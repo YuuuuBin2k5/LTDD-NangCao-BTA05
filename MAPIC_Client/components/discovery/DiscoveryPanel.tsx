@@ -138,9 +138,6 @@ export default function DiscoveryPanel({
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: colors.cardBackground.deepSpace,
-    borderTopLeftRadius: borderRadius['2xl'],
-    borderTopRightRadius: borderRadius['2xl'],
   },
   scrollView: {
     flex: 1,

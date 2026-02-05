@@ -1,0 +1,21 @@
+[33m4a63c73[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmaster[m[33m)[m docs: them documentation va summary files
+[33m6db3fee[m feat(frontend): hoan thien tat ca components
+[33m6d5ea67[m feat(frontend): tich hop DiscoveryPanel vao Home screen
+[33m3700c50[m feat(frontend): nang cap OpenStreetMapView
+[33mb677b08[m feat(frontend): tao DiscoveryPanel container
+[33m292420a[m feat(frontend): them error handling components
+[33m957ee16[m feat(frontend): tao FriendGrid component
+[33m21e97db[m feat(frontend): tao FriendGridCard va skeleton
+[33mb49ce2b[m feat(frontend): tao PlaceCarousel component
+[33maa7ab04[m feat(frontend): tao PlaceCard va SkeletonCard
+[33m23e2a67[m feat(frontend): tao CategoryChips component
+[33m38091a1[m feat(frontend): tao Zustand store va utilities
+[33m90d7e30[m feat(frontend): tao API service layer
+[33m1530b5e[m feat(frontend): setup theme va types
+[33me6a7ea9[m chore: khoi tao React Native project
+[33m9ed1ce2[m feat(backend): hoan thien backend API
+[33m2aeda31[m feat(backend): them seed data va scripts
+[33m91f1e15[m feat(backend): tao REST API controllers
+[33m43f0f2a[m feat(backend): implement services layer
+[33m7fc1c13[m feat(backend): tao entities va repositories
+[33m9d4dc5d[m chore: khoi tao project Spring Boot backend

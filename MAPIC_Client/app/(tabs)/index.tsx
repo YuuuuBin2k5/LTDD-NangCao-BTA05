@@ -15,6 +15,7 @@ import BottomBar from "@/components/ui/BottomBar";
 import AppLogo from "@/components/branding/AppLogo";
 import OpenStreetMapView from "@/components/map/OpenStreetMapView";
 import DiscoveryPanel from "@/components/discovery/DiscoveryPanel";
+import DraggableBottomSheet from "@/components/ui/DraggableBottomSheet";
 import type { PopularPlace, NearbyFriend } from "@/types/discovery";
 
 export default function HomeScreen() {
@@ -193,14 +194,14 @@ export default function HomeScreen() {
         </View>
       </View>
 
-      <View style={styles.discoveryContainer}>
+      <DraggableBottomSheet>
         <DiscoveryPanel
           latitude={currentLat}
           longitude={currentLng}
           onPlacePress={handlePlacePress}
           onFriendPress={handleFriendPress}
         />
-      </View>
+      </DraggableBottomSheet>
 
       <BottomBar
         onCenterPress={handleCenterPress}
@@ -220,10 +221,6 @@ const styles = StyleSheet.create({
   },
   map: {
     flex: 1,
-  },
-  discoveryContainer: {
-    height: 400,
-    backgroundColor: colors.pageBackground.home,
   },
   loadingContainer: {
     flex: 1,
